@@ -4,7 +4,7 @@
   
   const value = ref('')
 
-  const options = [
+  const options1 = [
     {
       value: 'Select Option1',
       label: 'Select Option1',
@@ -13,17 +13,15 @@
       value: 'Select Option2',
       label: 'Select Option2',
     },
+  ]
+  const options2 = [
     {
-      value: 'Select Option3',
-      label: 'Select Option3',
+      value: 'Select BBBBB',
+      label: 'Select BBBBB',
     },
     {
-      value: 'Select Option4',
-      label: 'Select Option4',
-    },
-    {
-      value: 'Select Option5',
-      label: 'Select Option5',
+      value: 'Select CCCCC',
+      label: 'Select CCCCC',
     },
   ]
 </script>
@@ -71,7 +69,7 @@
       <h1>Select 组件：</h1>
       <el-select v-model="value" class="m-2" placeholder="Select" size="large">
         <el-option
-          v-for="item in options"
+          v-for="item in options1"
           :key="item.value"
           :label="item.label"
           :value="item.value"
@@ -79,15 +77,7 @@
       </el-select>
       <el-select v-model="value" class="m-2" placeholder="Select">
         <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
-        />
-      </el-select>
-      <el-select v-model="value" class="m-2" placeholder="Select" size="small">
-        <el-option
-          v-for="item in options"
+          v-for="item in options2"
           :key="item.value"
           :label="item.label"
           :value="item.value"
